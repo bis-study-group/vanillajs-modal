@@ -7,7 +7,7 @@ document.querySelectorAll('[data-modal-open]').forEach(elem => {
   const modal = /* Insert code here... */;
 
   // 閉じる
-  modal.querySelectorAll('[data-modal-close').forEach(closeElem => {
+  modal.querySelectorAll('[data-modal-close]').forEach(closeElem => {
     /* Insert code here... */
   });
 
