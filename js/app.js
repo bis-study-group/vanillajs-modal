@@ -3,16 +3,20 @@
  */
 document.querySelectorAll('[data-modal-open]').forEach(elem => {
   // 開閉する対象の要素を取得する
-  const targetModalId = elem.getAttribute(/* Insert code here... */);
-  const modal = /* Insert code here... */;
+  const targetModalId = elem.getAttribute('data-modal-open');
+  const modal = document.getElementById(targetModalId);
+  //const modal = document.querySelector("#" + targetModalId);
+  
 
   // 閉じる
-  modal.querySelectorAll('[data-modal-close').forEach(closeElem => {
-    /* Insert code here... */
+  modal.querySelectorAll('[data-modal-close]').forEach(closeElem => {
+    closeElem.addEventListener('click', function () {
+      modal.classList.remove('is-open');
+    });
   });
 
   // 開く
   elem.addEventListener('click', function () {
-    /* Insert code here... */
+    modal.classList.add('is-open');
   });
 });
