@@ -8,6 +8,21 @@
 HTML と CSS は出来ているので変更しません。  
 ただし重要なヒントですのでよく確認してください。
 
+## 提出方法
+
+```solution/{your name}``` のルールでブランチを作成してください。
+
+```console
+$ git clone git@github.com:bis-study-group/vanillajs-modal.git
+$ git checkout -b solution/harada
+```
+
+解き終わったらリモートリポジトリにプッシュしてください。
+
+```console
+$ git push origin solution/harada
+```
+
 ## モーダル機能の仕様
 
 ### 開く
